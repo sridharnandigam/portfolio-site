@@ -1,5 +1,9 @@
-$primary-color: #444;
+$primary-color: rgb(32, 31, 31);
 $secondary-color: #2596be;
+
+@mixin easeOut{
+    transition: all 0.5s ease-out;
+}
 
 *{
     box-sizing:border-box;
@@ -38,4 +42,32 @@ header {
     position: fixed;
     z-index: 2;
     width: 100%;
+}
+
+.text-secondary{
+    color:$secondary-color;
+}
+
+main{
+    padding:4rem;
+    height:100%;
+
+    .icons{
+        margin-top:1rem;
+
+        a{
+            padding:0.4rem;
+
+            &:hover{
+                color:$secondary-color;
+                @include easeOut();
+            }
+        }
+    }
+    &#home{
+        overflow: hidden;
+        h1{
+            margin-top:20vh;
+        }
+    }
 }
