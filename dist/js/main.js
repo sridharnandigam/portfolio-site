@@ -15,6 +15,7 @@ menuButton.addEventListener('click', toggleMenu);
 
 function toggleMenu(){
     if(!showMenu){
+        //add class of "close" when clicked on
         menuButton.classList.add('close');
         menu.classList.add('show');
         menuNav.classList.add('show');
@@ -26,6 +27,7 @@ function toggleMenu(){
         showMenu = true;
     }
     else{
+        //Remove class of "close" when clicked on again
         menuButton.classList.remove('close');
         menu.classList.remove('show');
         menuNav.classList.remove('show');
