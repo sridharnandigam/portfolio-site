@@ -67,6 +67,24 @@
   .menu:hover {
     color: #2596be; }
 
+@media screen and (max-width: 500px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 100vh;
+    transform: translate3d(100%, 0, 0);
+    font-size: 24px; } }
+
 * {
   box-sizing: border-box; }
 

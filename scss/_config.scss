@@ -39,3 +39,10 @@ $background-opacity: 0.75;
     }
 
 }
+
+@mixin mediaLg{
+    @media screen and (min-width: 500px) {
+        @content;
+    }
+
+}
