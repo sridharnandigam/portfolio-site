@@ -5,7 +5,7 @@
     box-sizing:border-box;
 }
 body{
-    @include background;
+    //@include background;
     background:$primary-color;
     color: set-text-color($primary-color);
     height: 100%;
@@ -20,7 +20,7 @@ h1, h2, h3{
     font-weight: 400;
 
     &.lg-heading{
-        font-size: 3rem;
+        font-size: 4rem;
     }
     &.sm-heading{
         font: size 1px;
@@ -35,8 +35,22 @@ h1, h2, h3{
 }
 //sections
 section {
+    &#Introduction{
+        @include background;
+        width: 100%;
+        top: 0;
+    
+    }
     &#Projects{
         background: rgb(240, 12, 12);
+    }
+}
+img {
+    &.project-img{
+        position:relative;
+        width: 25%;
+        height: auto;
+        left: 0px;
     }
 }
 a {
@@ -74,7 +88,7 @@ main{
     &#home{
         overflow: hidden;
         h1{
-            margin-top:20vh;
+            margin-top:5vh;
         }
     }
 }
