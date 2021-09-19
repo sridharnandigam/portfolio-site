@@ -7,7 +7,7 @@
 body{
     @include background;
     background:$primary-color;
-    color: set-text-color(&$primary-color);
+    color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -28,8 +28,17 @@ h1, h2, h3{
         padding:0.2rem 1rem;
         background: rgba(lighten($primary-color,2), 0.5);
     }
+    &.section-heading{
+        font: size 10px;
+        text-align: center;
+    }
 }
-
+//sections
+section {
+    &#Projects{
+        background: rgb(240, 12, 12);
+    }
+}
 a {
     color: #ffff;
     text-decoration:none;
@@ -46,6 +55,7 @@ header {
 }
 
 main{
+    @include background;
     padding:4rem;
     height:100%;
 

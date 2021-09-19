@@ -14,7 +14,7 @@ $background-opacity: 0.75;
 
 @mixin background{
     @if $show-city-image{
-        &#bg-img{
+        &#home{
             background: $city-image;
             background-attachment:fixed;
             background-size:cover;
