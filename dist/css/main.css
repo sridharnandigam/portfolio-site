@@ -116,9 +116,7 @@ section#Introduction {
   top: 0; }
   section#Introduction#Introduction {
     background: url(../../images/austin5.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center center; }
+    background-size: cover; }
     section#Introduction#Introduction:after {
       content: '';
       top: 100px;
@@ -154,9 +152,7 @@ main {
   height: 100%; }
   main#Introduction {
     background: url(../../images/austin5.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center center; }
+    background-size: cover; }
     main#Introduction:after {
       content: '';
       top: 100px;

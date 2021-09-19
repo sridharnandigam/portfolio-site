@@ -16,9 +16,9 @@ $background-opacity: 0.75;
     @if $show-city-image{
         &#Introduction{
             background: $city-image;
-            background-attachment:fixed;
+            //background-attachment:fixed;
             background-size:cover;
-            background-position:center center;
+            //background-position: top;
             &:after{
                 content:'';
                 top: 100px;
