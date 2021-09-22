@@ -18,54 +18,44 @@ body{
 h1, h2, h3{
     margin: 0;
     font-weight: 400;
+    padding: 0.4rem;
 
     &.lg-heading{
         font-size: 4rem;
-        z-index: 9999;
+        -webkit-text-stroke: 0.5px black;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
     &.sm-heading{
         font: size 1px;
         margin-bottom: 2rem;
-        padding:0.2rem 1rem;
-        background: rgba(lighten($primary-color,2), 0.5);
+        //background: rgba(lighten($primary-color,2), 0.5);
     }
     &.section-heading{
         font: size 10px;
         text-align: center;
     }
 }
-/*
-div {
-    &#Introduction{
-        @include background;
-        width: 100%;
-        height: 450px;
-        top: 0;
-        position: relative;
-        &::after{
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
-            opacity: .6;
-        } 
-    }
-}
-*/
+
 //sections
 section {
     &#Introduction{
         @include background;
+        flex-direction: column;
+        min-height: 450px;
         width: 100%;
-        height: 450px;
         top: 0;
         position: relative;
         //kinda cringe ngl, gonna have to make this better
+        
         .intro-content{
             position: relative;
+            .profile-pic{
+                width: 300px;
+                border-radius: 50%;
+                position: relative;
+                top: 50%;
+                left: 12.5%;
+            }
         }
         .icons{
             position: relative;
@@ -77,7 +67,8 @@ section {
             right: 0;
             bottom: 0;
             left: 0;
-            background: rgba($primary-color, $background-opacity);
+            //background: rgba($primary-color, $background-opacity);
+            background: rgba($primary-color, 0.9);
             opacity: .6;
         } 
     }
@@ -105,7 +96,7 @@ header {
 }
 
 .text-secondary{
-    color:$secondary-color;
+    color:$experiment-color;
 }
 
 main{
