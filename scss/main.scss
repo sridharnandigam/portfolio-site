@@ -46,16 +46,16 @@ section {
         top: 0;
         position: relative;
         //kinda cringe ngl, gonna have to make this better
-        
         .intro-content{
             position: relative;
             .profile-pic{
                 width: 300px;
                 border-radius: 50%;
                 position: relative;
-                top: 50%;
-                left: 12.5%;
+                display:block;
+                margin:auto;
             }
+            
         }
         .icons{
             position: relative;
@@ -68,8 +68,8 @@ section {
             bottom: 0;
             left: 0;
             //background: rgba($primary-color, $background-opacity);
-            background: rgba($primary-color, 0.9);
-            opacity: .6;
+            background: rgba($primary-color, $background-opacity);
+            //opacity: 0.9;
         } 
     }
     &#Projects{
@@ -101,7 +101,7 @@ header {
 
 main{
     @include background;
-    padding:4rem;
+    padding:6rem;
     height:100%;
 
     .icons{
