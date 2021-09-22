@@ -22,6 +22,7 @@ h1, h2, h3{
 
     &.lg-heading{
         font-size: 4rem;
+        font-family: 'Dosis';
         -webkit-text-stroke: 0.5px black;
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
@@ -38,6 +39,8 @@ h1, h2, h3{
 
 //sections
 section {
+    border-radius: 20px;
+    margin-bottom: 4rem;
     &#Introduction{
         @include background;
         flex-direction: column;
@@ -46,6 +49,7 @@ section {
         top: 0;
         position: relative;
         //kinda cringe ngl, gonna have to make this better
+        text-align: center;
         .intro-content{
             position: relative;
             .profile-pic{
@@ -58,7 +62,6 @@ section {
                 margin-right: auto;
                 padding: 1rem;
             }
-            
         }
         .icons{
             position: relative;
@@ -100,7 +103,7 @@ header {
 }
 
 .text-secondary{
-    color:$experiment-color;
+    color:$secondary-color;
 }
 
 main{
