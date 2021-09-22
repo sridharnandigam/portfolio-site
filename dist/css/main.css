@@ -100,7 +100,8 @@ h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 4rem; }
+    font-size: 4rem;
+    z-index: 9999; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     font: size 1px;
     margin-bottom: 2rem;
@@ -110,21 +111,58 @@ h1, h2, h3 {
     font: size 10px;
     text-align: center; }
 
+/*
+div {
+    &#Introduction{
+        @include background;
+        width: 100%;
+        height: 450px;
+        top: 0;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+            opacity: .6;
+        } 
+    }
+}
+*/
+.intro-content {
+  position: relative; }
+
 section#Introduction {
   width: 100%;
   height: 450px;
-  top: 0; }
+  top: 0;
+  position: relative; }
   section#Introduction#Introduction {
+    content: '';
     background: url(../../images/austin5.jpg);
-    background-size: cover; }
-    section#Introduction#Introduction:after {
-      content: '';
-      top: 100px;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: rgba(218, 21, 168, 0.75); }
+    background-size: cover;
+    /* &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+                opacity: .6; 
+            } */ }
+  section#Introduction::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: .6; }
 
 section#Projects {
   background: #f00c0c; }
@@ -151,16 +189,19 @@ main {
   padding: 4rem;
   height: 100%; }
   main#Introduction {
+    content: '';
     background: url(../../images/austin5.jpg);
-    background-size: cover; }
-    main#Introduction:after {
-      content: '';
-      top: 100px;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: rgba(218, 21, 168, 0.75); }
+    background-size: cover;
+    /* &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+                opacity: .6; 
+            } */ }
   main .icons {
     margin-top: 1rem; }
     main .icons a {

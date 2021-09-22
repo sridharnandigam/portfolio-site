@@ -21,6 +21,7 @@ h1, h2, h3{
 
     &.lg-heading{
         font-size: 4rem;
+        z-index: 9999;
     }
     &.sm-heading{
         font: size 1px;
@@ -33,6 +34,30 @@ h1, h2, h3{
         text-align: center;
     }
 }
+/*
+div {
+    &#Introduction{
+        @include background;
+        width: 100%;
+        height: 450px;
+        top: 0;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+            opacity: .6;
+        } 
+    }
+}
+*/
+.intro-content{
+    position: relative;
+}
 //sections
 section {
     &#Introduction{
@@ -40,7 +65,18 @@ section {
         width: 100%;
         height: 450px;
         top: 0;
-    
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+            opacity: .6;
+            
+        } 
     }
     &#Projects{
         background: rgb(240, 12, 12);
