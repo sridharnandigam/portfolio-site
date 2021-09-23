@@ -98,13 +98,11 @@ body {
 
 h1, h2, h3 {
   margin: 0;
-  font-weight: 400;
+  font-weight: 200;
   padding: 0.4rem; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
     font-size: 4rem;
-    font-family: 'Dosis';
-    -webkit-text-stroke: 0.5px black;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+    font-family: 'Dosis'; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     font: size 1px;
     margin-bottom: 2rem; }
