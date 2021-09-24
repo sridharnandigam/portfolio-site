@@ -32,14 +32,15 @@ h1, h2, h3{
         //background: rgba(lighten($primary-color,2), 0.5);
     }
     &.section-heading{
-        font: size 10px;
+        font-size: 40px;
         text-align: center;
+        padding-bottom: 2rem;
     }
 }
 
 //sections
 section {
-    border-radius: 20px;
+    border-radius: $section-border-radius;
     margin-bottom: 4rem;
     &#Introduction{
         @include background;
@@ -79,14 +80,25 @@ section {
     }
     &#Projects{
         background: rgb(240, 12, 12);
+        padding: $content-padding;
+        //Use grid-row span to overlap image
+        .project{
+            background:rgb(14, 114, 56);
+            border-radius: $section-border-radius;
+            margin: 20px;
+            padding: $content-padding;
+            display: grid;
+            grid-template-columns: 1fr 0.5fr 2fr;
+        }
     }
 }
 img {
     &.project-img{
         position:relative;
-        width: 25%;
+        width: 100%;
         height: auto;
-        left: 0px;
+        top: 2%;
+        left: 2%;
     }
 }
 a {
@@ -103,7 +115,9 @@ header {
 .text-secondary{
     color:$secondary-color;
 }
-
+.description{
+    font-size: $description-size;
+}
 main{
     @include background;
     padding: 1rem 6rem;
