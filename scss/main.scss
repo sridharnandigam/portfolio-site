@@ -18,11 +18,12 @@ body{
 h1, h2, h3{
     margin: 0;
     font-weight: 200;
-    padding: 0.4rem;
+    //padding: 0.4rem;
 
     &.lg-heading{
         font-size: 4rem;
         font-family: 'Dosis';
+        padding: 0.4rem;
         //-webkit-text-stroke: 0.5px black;
         //text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
@@ -79,16 +80,41 @@ section {
         } 
     }
     &#Projects{
-        background: rgb(240, 12, 12);
+        background: rgb(63,94,251);
+        background: radial-gradient(circle, rgba(63,94,251,1) 0%, $primary-color 100%);
+        
         padding: $content-padding;
         //Use grid-row span to overlap image
+
         .project{
-            background:rgb(14, 114, 56);
+            background: rgba($section-color, $background-opacity);
             border-radius: $section-border-radius;
             margin: 20px;
             padding: $content-padding;
             display: grid;
-            grid-template-columns: 1fr 0.5fr 2fr;
+            grid-template-rows: 50px 1fr 50px;
+            grid-template-columns: 150px 1fr;
+            .project-img{
+                grid-row: span 2;
+                grid-area: 1 / 1 / 2 / 2;
+            }
+            .project-title{
+                grid-row-start: 1;
+                grid-row-end: 1.5;
+                grid-column-start: 2;
+                padding-left: $content-padding;
+                vertical-align: top;
+
+                font-size: 25px;
+            }
+            .project-description{
+                grid-row-start: 1.5;
+                grid-row-end: 3;
+                grid-column-start: 2;
+                grid-column-end:3;
+                padding-left: $content-padding;
+                margin: 0;
+            }
         }
     }
 }
@@ -97,8 +123,6 @@ img {
         position:relative;
         width: 100%;
         height: auto;
-        top: 2%;
-        left: 2%;
     }
 }
 a {
