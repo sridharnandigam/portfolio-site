@@ -185,16 +185,21 @@ section {
     section#Projects .project .tags-section {
       grid-row-start: 3;
       grid-column: span 2;
-      padding: 20px; }
-      section#Projects .project .tags-section .tags, section#Projects .project .tags-section .tags--html, section#Projects .project .tags-section .tags--python, section#Projects .project .tags-section .tags--csharp {
+      padding-top: 20px; }
+      section#Projects .project .tags-section .tags, section#Projects .project .tags-section .tags--html, section#Projects .project .tags-section .tags--css, section#Projects .project .tags-section .tags--python, section#Projects .project .tags-section .tags--csharp, section#Projects .project .tags-section .tags--tensorflow, section#Projects .project .tags-section .tags--pytorch, section#Projects .project .tags-section .tags--react, section#Projects .project .tags-section .tags--java, section#Projects .project .tags-section .tags--javascript, section#Projects .project .tags-section .tags--node, section#Projects .project .tags-section .tags--gcp, section#Projects .project .tags-section .tags--aws {
         padding: 5px;
         border-radius: 5px;
         display: inline-block;
-        align-content: center; }
+        align-content: center;
+        margin-right: 10px; }
         section#Projects .project .tags-section .tags--html {
           background-color: #e44c24; }
           section#Projects .project .tags-section .tags--html:before {
             content: "HTML"; }
+        section#Projects .project .tags-section .tags--css {
+          background-color: #23a2cc; }
+          section#Projects .project .tags-section .tags--css:before {
+            content: "CSS"; }
         section#Projects .project .tags-section .tags--python {
           background-color: darkgreen; }
           section#Projects .project .tags-section .tags--python:before {
@@ -203,6 +208,38 @@ section {
           background-color: #9a4993; }
           section#Projects .project .tags-section .tags--csharp:before {
             content: "C#"; }
+        section#Projects .project .tags-section .tags--tensorflow {
+          background-color: orange; }
+          section#Projects .project .tags-section .tags--tensorflow:before {
+            content: "Tensorflow"; }
+        section#Projects .project .tags-section .tags--pytorch {
+          background-color: #fa6108; }
+          section#Projects .project .tags-section .tags--pytorch:before {
+            content: "Pytorch"; }
+        section#Projects .project .tags-section .tags--react {
+          background-color: #61dafb; }
+          section#Projects .project .tags-section .tags--react:before {
+            content: "React"; }
+        section#Projects .project .tags-section .tags--java {
+          background-color: #5be05b; }
+          section#Projects .project .tags-section .tags--java:before {
+            content: "Java"; }
+        section#Projects .project .tags-section .tags--javascript {
+          background-color: #f3db4c; }
+          section#Projects .project .tags-section .tags--javascript:before {
+            content: "Javascript"; }
+        section#Projects .project .tags-section .tags--node {
+          background-color: #60a556; }
+          section#Projects .project .tags-section .tags--node:before {
+            content: "Node"; }
+        section#Projects .project .tags-section .tags--gcp {
+          background-color: #437af9; }
+          section#Projects .project .tags-section .tags--gcp:before {
+            content: "Google Cloud Platform"; }
+        section#Projects .project .tags-section .tags--aws {
+          background-color: #ff9900; }
+          section#Projects .project .tags-section .tags--aws:before {
+            content: "Amazon Web Services"; }
 
 img.project-img {
   position: relative;
