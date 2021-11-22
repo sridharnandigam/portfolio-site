@@ -185,11 +185,24 @@ section {
     section#Projects .project .tags-section {
       grid-row-start: 3;
       grid-column: span 2;
-      border: 5px solid darkblue; }
-      section#Projects .project .tags-section .tag {
-        border: 5px solid green;
-        height: 50px;
-        width: 100px; }
+      padding: 20px; }
+      section#Projects .project .tags-section .tags, section#Projects .project .tags-section .tags--html, section#Projects .project .tags-section .tags--python, section#Projects .project .tags-section .tags--csharp {
+        padding: 5px;
+        border-radius: 5px;
+        display: inline-block;
+        align-content: center; }
+        section#Projects .project .tags-section .tags--html {
+          background-color: #e44c24; }
+          section#Projects .project .tags-section .tags--html:before {
+            content: "HTML"; }
+        section#Projects .project .tags-section .tags--python {
+          background-color: darkgreen; }
+          section#Projects .project .tags-section .tags--python:before {
+            content: "Python"; }
+        section#Projects .project .tags-section .tags--csharp {
+          background-color: #9a4993; }
+          section#Projects .project .tags-section .tags--csharp:before {
+            content: "C#"; }
 
 img.project-img {
   position: relative;

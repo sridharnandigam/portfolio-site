@@ -14,6 +14,20 @@ $profile-image: url(../../images/profile_pic.jpg);
 
 $background-opacity: 0.75;
 
+//Programming tags
+$html: #e44c24;
+$css: rgb(35, 162, 204);
+$python: darkgreen;
+$tensorflow: orange;
+$pytorch: rgb(250, 97, 8);
+$react: #61dafb;
+$csharp: #9a4993;
+$java: rgb(91, 224, 91);
+$javascript: #f3db4c;
+$node: #60a556;
+$gcp: #437af9;
+$aws: #ff9900;
+
 @mixin easeOut{
     transition: all 0.5s ease-out;
 }

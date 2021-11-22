@@ -119,11 +119,36 @@ section {
             .tags-section{
                 grid-row-start: 3;
                 grid-column: span 2;
-                border: 5px solid darkblue;
-                .tag{
-                    border: 5px solid green;
-                    height: 50px;
-                    width: 100px;
+                padding: $content-padding;
+                .tags{
+                    padding: 5px;
+                    border-radius: 5px;
+                    display: inline-block;
+                    align-content: center;
+
+                    &--html{
+                        @extend .tags;
+                        background-color: $html;
+                        &:before{
+                            content: "HTML";
+                        }
+                    }
+
+                    &--python{
+                        @extend .tags;
+                        background-color: $python;
+                        &:before{
+                            content: "Python";
+                        }
+                    }
+
+                    &--csharp{
+                        background-color: $csharp;
+                        @extend .tags;
+                        &:before{
+                            content: "C#";
+                        }
+                    }
                 }
             }
         }
