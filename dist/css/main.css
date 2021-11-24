@@ -165,9 +165,36 @@ section {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 150px 1fr; }
-    section#Projects .project .project-img {
+    section#Projects .project .project-img-section {
       grid-row: span 2;
-      grid-area: 1.5 / 1 / 3 / 2; }
+      grid-area: 1.5 / 1 / 3 / 2;
+      /**
+                .img-overlay{
+                    z-index: 9;
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    .proj-link{
+                        display: none;
+                    }
+                    &:hover:before{
+                        background-color: hotpink;
+                    }
+                }
+                **/ }
+      section#Projects .project .project-img-section .project-img {
+        grid-row: span 2;
+        grid-area: 1.5 / 1 / 3 / 2; }
+        section#Projects .project .project-img-section .project-img:hover {
+          opacity: 0.5; }
+        section#Projects .project .project-img-section .project-img:hover + .proj-link, section#Projects .project .project-img-section .project-img .proj-link {
+          display: inline-block;
+          background-color: hotpink; }
+      section#Projects .project .project-img-section .proj-link {
+        z-index: 9;
+        position: absolute;
+        display: inline-block;
+        vertical-align: middle; }
     section#Projects .project .project-title {
       grid-row-start: 1;
       grid-row-end: 1.5;
