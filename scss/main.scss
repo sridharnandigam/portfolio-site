@@ -152,7 +152,6 @@ section {
     &#Skills{
         .tech-table{
             display:table;
-            border-collapse: collapse;
             width: 100%;
             .tech-row{
                 display: table-row;      
@@ -167,6 +166,13 @@ section {
                     padding: $content-padding;
                     font-size: 75px;
                 }
+            }
+        }
+    }
+    &#Blog{
+        .blog{
+            h3{
+                text-align: center;
             }
         }
     }
@@ -309,4 +315,9 @@ main{
             text-align: center;
         }
     }
+}
+
+footer{
+    padding: $content-padding;
+    text-align: center;
 }

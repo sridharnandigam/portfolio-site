@@ -219,7 +219,6 @@ section {
         padding-left: 20px; }
   section#Skills .tech-table {
     display: table;
-    border-collapse: collapse;
     width: 100%; }
     section#Skills .tech-table .tech-row {
       display: table-row; }
@@ -232,6 +231,8 @@ section {
         display: table-cell;
         padding: 20px;
         font-size: 75px; }
+  section#Blog .blog h3 {
+    text-align: center; }
 
 .tags-section {
   grid-row-start: 3;
@@ -335,3 +336,7 @@ main {
     overflow: hidden; }
     main#home h1 {
       text-align: center; }
+
+footer {
+  padding: 20px;
+  text-align: center; }
