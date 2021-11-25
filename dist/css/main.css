@@ -24,7 +24,8 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 100%;
+  float: right;
+  width: 25%;
   opacity: 0.9;
   visibility: hidden; }
   .menu.show {
@@ -34,10 +35,9 @@
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    float: right;
-    width: 25%;
     height: 100vh;
-    overflow: hidden; }
+    overflow: hidden;
+    padding: 20px; }
   .menu-nav {
     margin: 0;
     padding: 0;
