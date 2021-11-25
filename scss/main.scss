@@ -98,31 +98,32 @@ section {
             .project-img-section{
                 grid-row: span 2;
                 grid-area: 1.5 / 1 / 3 / 2;
-                /**
-                .img-overlay{
-                    z-index: 9;
-                    position: absolute;
-                    height: 100%;
-                    width: 100%;
-                    .proj-link{
-                        display: none;
-                    }
-                    &:hover:before{
-                        background-color: hotpink;
-                    }
-                }
-                **/
             }
             .project-img{
                 grid-row: span 2;
                 grid-area: 1.5 / 1 / 3 / 2;
+                position: relative;
                 &:hover{
-                    opacity: 0.5;
+                    opacity: 0.1;
+                }
+                &:hover + .proj-link-icon, .proj-link-icon{
+                    z-index: -2;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%,-50%);
+                    transform: translate(-50%,-50%);
+                    display:inline-block;
                 }
             }
             .project-link{
                 grid-row: span 2;
                 max-height: fit-content;
+                text-align: center;
+                position: relative;
+                .proj-link-icon{
+                    display: none;
+                }
             }
             
             .project-stuff{
