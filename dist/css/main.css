@@ -217,6 +217,23 @@ section {
         font-size: 25px; }
       section#Experience .job .job-description .job-exp {
         padding-left: 20px; }
+  section#Skills .tech-table {
+    display: table;
+    border-collapse: collapse;
+    width: 100%; }
+    section#Skills .tech-table .tech-row {
+      display: table-row;
+      border: 1px solid #f51e1e; }
+      section#Skills .tech-table .tech-row .tech-type {
+        display: table-cell;
+        width: 25%;
+        border: 1px solid #f51e1e;
+        padding: 20px;
+        font-size: 25px; }
+      section#Skills .tech-table .tech-row .tech-icons {
+        display: table-cell;
+        padding: 20px;
+        font-size: 100px; }
 
 .tags-section {
   grid-row-start: 3;
