@@ -169,13 +169,12 @@ section {
       grid-row: span 2;
       grid-area: 1.5 / 1 / 3 / 2; }
     section#Projects .project .project-img {
-      grid-row: span 2;
-      grid-area: 1.5 / 1 / 3 / 2;
+      max-width: 100%;
       position: relative; }
       section#Projects .project .project-img:hover {
         opacity: 0.1; }
       section#Projects .project .project-img:hover + .proj-link-icon, section#Projects .project .project-img .proj-link-icon {
-        z-index: -2;
+        z-index: 9;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -183,8 +182,7 @@ section {
         transform: translate(-50%, -50%);
         display: inline-block; }
     section#Projects .project .project-link {
-      grid-row: span 2;
-      max-height: fit-content;
+      height: fit-content;
       text-align: center;
       position: relative; }
       section#Projects .project .project-link .proj-link-icon {

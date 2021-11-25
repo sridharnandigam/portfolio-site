@@ -100,14 +100,13 @@ section {
                 grid-area: 1.5 / 1 / 3 / 2;
             }
             .project-img{
-                grid-row: span 2;
-                grid-area: 1.5 / 1 / 3 / 2;
+                max-width: 100%;
                 position: relative;
                 &:hover{
                     opacity: 0.1;
                 }
                 &:hover + .proj-link-icon, .proj-link-icon{
-                    z-index: -2;
+                    z-index: 9;
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -117,8 +116,7 @@ section {
                 }
             }
             .project-link{
-                grid-row: span 2;
-                max-height: fit-content;
+                height: fit-content;
                 text-align: center;
                 position: relative;
                 .proj-link-icon{
