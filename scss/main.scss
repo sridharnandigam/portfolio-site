@@ -132,7 +132,7 @@ section {
             .company{
                 text-align: center;
                 .exp-img{
-                    max-width: 100%;
+                    width: 100%;
                 }
                 .company-name{
                     font-weight: 500;
@@ -271,6 +271,20 @@ section {
             @extend .tags;
             &:before{
                 content: "Amazon Web Services";
+            }
+        }
+        &--sqlserver{
+            background-color: $sqlserver;
+            @extend .tags;
+            &:before{
+                content: "SQL Server";
+            }
+        }
+        &--sass{
+            background-color: $sass;
+            @extend .tags;
+            &:before{
+                content: "SCSS";
             }
         }
     }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <title>Sridhar's Portfolio</title>
 </head>
 <body id="bg-img">
@@ -97,37 +98,31 @@
         </h2>
         <section id = "Projects">
             <div class = "section-content">
-                <div class = project>
-                    <a href="https://github.com/sridharnandigam" target="_blank" class = "project-link">
-                        <img src = "../../images/flower.jpg" class = "project-img" alt = "Project 1 Image">
+                <div class = "project">
+                    <a href="https://github.com/sridharnandigam/portfolio-site" target="_blank" class = "project-link">
+                        <img src = "../../images/austin.jpg" class = "project-img" alt = "Project 1 Image">
                         <div class = "proj-link-icon">
                             <i class="fab fa-github fa-2x"></i>
                         </div>
                     </a>
-                    
                     <div class = "project-stuff">
-                        <h3 class = "project-title">
-                            Flower Classifier
+                        <h3 class = project-title>
+                            My Website
                         </h3>
-                        
                         <p class = "project-description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                            deserunt mollit anim id est laborum.
-                    </p>
+                            My personal website to show off what I have learned and what I am learning. Kind of a glorified resume at the moment.
+                            Stay tuned. 
+                        </p>
                     </div>
                     <div class = "tags-section">
                         <div class = "tags--html"></div>
-                        <div class = "tags--python"></div>
-                        <div class = "tags--pytorch"></div>
+                        <div class = "tags--css"></div>
+                        <div class = "tags--javascript"></div>
+                        <div class = "tags--sass"></div>
                     </div>
                 </div>
                 <div class = "project">
-                    <a href="https://github.com/sridharnandigam" target="_blank" class = "project-link">
+                    <a href="https://github.com/pgosar/AlphaHacks" target="_blank" class = "project-link">
                         <img src = "../../images/sustainabrand.jpg" class = "project-img" alt = "Project 1 Image">
                         <div class = "proj-link-icon">
                             <i class="fab fa-github fa-2x"></i>
@@ -151,6 +146,31 @@
                         <div class = "tags--pytorch"></div>
                     </div>
                 </div>
+                <div class = project>
+                    <a href="https://github.com/sridharnandigam/Flower_ImageClassifier_Udacity" target="_blank" class = "project-link">
+                        <img src = "../../images/flower.jpg" class = "project-img" alt = "Project 1 Image">
+                        <div class = "proj-link-icon">
+                            <i class="fab fa-github fa-2x"></i>
+                        </div>
+                    </a>
+                    
+                    <div class = "project-stuff">
+                        <h3 class = "project-title">
+                            Flower Classifier
+                        </h3>
+                        
+                        <p class = "project-description">
+                            A simple classifier made with Pytorch to classify flowers using the model that the user inputs through
+                            the command prompt. Developed for the Udacity Machine Learning Nanodegree to grasp the fundamentals of data
+                            processing and neural networks.
+                        </p>
+                    </div>
+                    <div class = "tags-section">
+                        <div class = "tags--html"></div>
+                        <div class = "tags--python"></div>
+                        <div class = "tags--pytorch"></div>
+                    </div>
+                </div>
             </div>
         </section>
         <a id = "EXPERIENCE"></a>
@@ -168,13 +188,59 @@
                         <h3 class = "job-title">Data Engineer Intern</h3>
                         <h4 class = "job-time">(May 2021 - Present)</h4>
                         <ul class = "job-exp">
-                            <li>Used C# to create data backup program</li>
-                            <li>Used C# to create data backup program</li>
+                            <li>Used C# to retrieve data from API and merge into SQL Server database</li>
+                            <li>Architected data solution for one of our top clients in an ETL staging server with SQL</li>
+                            <li>Debugged and fixed data transform issues in production environment to avoid significantly impacting over 800 active users.</li>
+                            <li>Collaborated in the design and build of data analytics platform</li>
+                            <li>Designed tools to support provision of enterprise data for transactional reporting and dashboards</li>
                         </ul>
                     </div>
                     <div class = "tags-section">
                         <div class = "tags--csharp"></div>
                         <div class = "tags--python"></div>
+                        <div class = "tags--sqlserver"></div>
+                    </div>
+                </div>
+                <div class = "job">
+                    <div class = "company">
+                        <img src = "../../images/twg.jpg" class = "exp-img" alt = "TWG Image">
+                        <h3 class = "company-name">TWG Technologies</h3>
+                    </div>
+                    <div class = "job-description">
+                        <h3 class = "job-title">Machine Learning Engineer Intern</h3>
+                        <h4 class = "job-time">(May 2021 - July 2021)</h4>
+                        <ul class = "job-exp">
+                            <li>Preprocessed and cleaned image dataset with OpenCV for training</li>
+                            <li>Designed and integrated Pytorch image classification models with applications</li>
+                            <li>Created object detection algorithm with Tensorflow API</li>
+                            <li>Responsible for the designing and implementation scalable systems to properly integrate machine learning with AWS SageMaker</li>
+                            <li>Explored and implemented MLOPs best practices</li>
+                        </ul>
+                    </div>
+                    <div class = "tags-section">
+                        <div class = "tags--python"></div>
+                        <div class = "tags--pytorch"></div>
+                        <div class = "tags--aws"></div>
+                    </div>
+                </div>
+                <div class = "job">
+                    <div class = "company">
+                        <img src = "../../images/unt.jpg" class = "exp-img" alt = "CGN Image">
+                        <h3 class = "company-name">Biomedical AI Lab at UNT</h3>
+                    </div>
+                    <div class = "job-description">
+                        <h3 class = "job-title">Machine Learning Researcher</h3>
+                        <h4 class = "job-time">(June 2020 - December 2020)</h4>
+                        <ul class = "job-exp">
+                            <li>Read in accelerometer data as x, y, and z coordinates from Android device to build dataset from the ground up</li>
+                            <li>Cleaned and prepared data with Pandas and Numpy for training and testing</li>
+                            <li>Developed LSTM model with Tensorflow to use coordinate data to recognize hand gestures</li>
+                            <li>Co-authored book chapter on autoencoders, embeddings, and their applications</li>
+                        </ul>
+                    </div>
+                    <div class = "tags-section">
+                        <div class = "tags--python"></div>
+                        <div class = "tags--tensorflow"></div>
                     </div>
                 </div>
             </div>
@@ -216,6 +282,7 @@
                     <div class = "tech-icons">
                         <i class="devicon-react-original"></i>
                         <i class="devicon-tensorflow-original"></i>
+                        <span class="iconify" data-icon="cib:pytorch" style="color: white;"></span>
                         <i class="devicon-numpy-original"></i>
                         <i class="devicon-pandas-original"></i>
                     </div>

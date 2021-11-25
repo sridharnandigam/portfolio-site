@@ -208,7 +208,7 @@ section {
     section#Experience .job .company {
       text-align: center; }
       section#Experience .job .company .exp-img {
-        max-width: 100%; }
+        width: 100%; }
       section#Experience .job .company .company-name {
         font-weight: 500; }
     section#Experience .job .job-description {
@@ -238,7 +238,7 @@ section {
   grid-row-start: 3;
   grid-column: span 2;
   padding-top: 20px; }
-  .tags-section .tags, .tags-section .tags--html, .tags-section .tags--css, .tags-section .tags--python, .tags-section .tags--csharp, .tags-section .tags--tensorflow, .tags-section .tags--pytorch, .tags-section .tags--react, .tags-section .tags--java, .tags-section .tags--javascript, .tags-section .tags--node, .tags-section .tags--gcp, .tags-section .tags--aws {
+  .tags-section .tags, .tags-section .tags--html, .tags-section .tags--css, .tags-section .tags--python, .tags-section .tags--csharp, .tags-section .tags--tensorflow, .tags-section .tags--pytorch, .tags-section .tags--react, .tags-section .tags--java, .tags-section .tags--javascript, .tags-section .tags--node, .tags-section .tags--gcp, .tags-section .tags--aws, .tags-section .tags--sqlserver, .tags-section .tags--sass {
     padding: 5px;
     border-radius: 5px;
     display: inline-block;
@@ -292,6 +292,14 @@ section {
       background-color: #ff9900; }
       .tags-section .tags--aws:before {
         content: "Amazon Web Services"; }
+    .tags-section .tags--sqlserver {
+      background-color: #ad1519; }
+      .tags-section .tags--sqlserver:before {
+        content: "SQL Server"; }
+    .tags-section .tags--sass {
+      background-color: #cc649c; }
+      .tags-section .tags--sass:before {
+        content: "SCSS"; }
 
 a {
   color: #ffff;
