@@ -96,17 +96,17 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin: 0;
   font-weight: 200; }
-  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+  h1.lg-heading, h2.lg-heading, h3.lg-heading, h4.lg-heading {
     font-size: 4rem;
     font-family: 'Dosis';
     padding: 0.4rem; }
-  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+  h1.sm-heading, h2.sm-heading, h3.sm-heading, h4.sm-heading {
     font: size 1px;
     margin-bottom: 2rem; }
-  h1.section-heading, h2.section-heading, h3.section-heading {
+  h1.section-heading, h2.section-heading, h3.section-heading, h4.section-heading {
     font-size: 40px;
     text-align: center;
     padding-bottom: 2rem; }
@@ -255,11 +255,26 @@ section {
           background-color: #ff9900; }
           section#Projects .project .tags-section .tags--aws:before {
             content: "Amazon Web Services"; }
-
-img.project-img {
-  position: relative;
-  width: 100%;
-  height: auto; }
+  section#Experience .job {
+    background: rgba(78, 78, 78, 0.75);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 150px 1fr; }
+    section#Experience .job .company {
+      text-align: center; }
+      section#Experience .job .company .exp-img {
+        max-width: 100%; }
+      section#Experience .job .company .company-name {
+        font-weight: 500; }
+    section#Experience .job .job-description {
+      padding-left: 20px; }
+      section#Experience .job .job-description .job-title {
+        font-size: 25px; }
+      section#Experience .job .job-description .job-exp {
+        padding-left: 20px; }
 
 a {
   color: #ffff;

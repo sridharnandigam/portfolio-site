@@ -75,3 +75,13 @@ $aws: #ff9900;
     }
 
 }
+
+@mixin card{
+    background: rgba($section-color, $background-opacity);
+            border-radius: $section-border-radius;
+            margin: 20px;
+            padding: $content-padding;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 150px 1fr;
+}
