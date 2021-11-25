@@ -155,19 +155,17 @@ section {
             border-collapse: collapse;
             width: 100%;
             .tech-row{
-                display: table-row;
-                border: 1px solid rgb(245, 30, 30);          
+                display: table-row;      
                 .tech-type{
                     display: table-cell;
                     width: 25%;
-                    border: 1px solid rgb(245, 30, 30); 
                     padding: $content-padding;
                     font-size: 25px;
                 }
                 .tech-icons{
                     display: table-cell;
                     padding: $content-padding;
-                    font-size: 100px;
+                    font-size: 75px;
                 }
             }
         }
