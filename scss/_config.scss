@@ -71,13 +71,6 @@ $sass: #cc649c;
 
 }
 
-@mixin mediaLg{
-    @media screen and (min-width: 500px) {
-        @content;
-    }
-
-}
-
 @mixin card{
     background: rgba($section-color, $background-opacity);
             border-radius: $section-border-radius;
