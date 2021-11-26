@@ -68,15 +68,14 @@ $sass: #cc649c;
     @media screen and (max-width: 500px) {
         @content;
     }
-
 }
 
 @mixin card{
     background: rgba($section-color, $background-opacity);
-            border-radius: $section-border-radius;
-            margin: 20px;
-            padding: $content-padding;
-            display: grid;
-            grid-template-rows: auto;
-            grid-template-columns: 150px 1fr;
+    border-radius: $section-border-radius;
+    margin: 20px;
+    padding: $content-padding;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 150px 1fr;
 }

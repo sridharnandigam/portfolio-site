@@ -1,6 +1,5 @@
 //Mobile devices
 @include mediaSm{
-    $content-padding: 0px;
     main {
         align-items: center;
         text-align: center;
@@ -34,7 +33,6 @@
         padding: 0px;
     }
 
-
     .profile-pic{
         max-width: 100%;
         border-radius: 50%;
@@ -43,5 +41,37 @@
         margin-left: auto;
         margin-right: auto;
         padding: 1rem;
+    }
+
+    section{
+        &#Projects{
+            .project{
+                display: inline-block;
+                .project-img{
+                    max-width:75%;
+                }
+            }
+        }
+        &#Experience{
+            .job{
+                display: inline-block;
+                .company{
+                    .exp-img{
+                        max-width:75%;
+                    }
+                }
+                .job-description{
+                    padding-left: 0px;
+                }
+            }
+        }
+        &#Skills{
+            .tech-table{
+                display:inline-block;
+                .tech-row{
+                    display:inline-block;
+                }
+            }
+        }
     }
 }

@@ -69,36 +69,6 @@
   .menu:hover {
     color: #2596be; }
 
-@media screen and (max-width: 500px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
-  .menu.show {
-    width: 100%; }
-  ul.menu-nav {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 100vh;
-    transform: translate3d(100%, 0, 0);
-    font-size: 24px; }
-  #home {
-    padding: 0px; }
-  .profile-pic {
-    max-width: 100%;
-    border-radius: 50%;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem; } }
-
 * {
   box-sizing: border-box; }
 
@@ -362,3 +332,47 @@ main {
 footer {
   padding: 20px;
   text-align: center; }
+
+@media screen and (max-width: 500px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  .menu.show {
+    width: 100%; }
+  ul.menu-nav {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 100vh;
+    transform: translate3d(100%, 0, 0);
+    font-size: 24px; }
+  #home {
+    padding: 0px; }
+  .profile-pic {
+    max-width: 100%;
+    border-radius: 50%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem; }
+  section#Projects .project {
+    display: inline-block; }
+    section#Projects .project .project-img {
+      max-width: 75%; }
+  section#Experience .job {
+    display: inline-block; }
+    section#Experience .job .company .exp-img {
+      max-width: 75%; }
+    section#Experience .job .job-description {
+      padding-left: 0px; }
+  section#Skills .tech-table {
+    display: inline-block; }
+    section#Skills .tech-table .tech-row {
+      display: inline-block; } }
