@@ -67,9 +67,15 @@
         }
         &#Skills{
             .tech-table{
-                display:inline-block;
+                display:block;
                 .tech-row{
-                    display:inline-block;
+                    display:block;
+                    .tech-icons{
+                        display:block;
+                    }
+                    .tech-type{
+                        padding: 0px;
+                    }
                 }
             }
         }
