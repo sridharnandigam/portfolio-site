@@ -123,7 +123,7 @@ section {
     text-align: center; }
     section#Introduction#Introduction {
       content: '';
-      background: url(images/austin5.jpg);
+      background: url("../images/austin5.jpg");
       background-size: cover;
       /* &:before {
                 content: '';
@@ -321,7 +321,7 @@ main {
   height: 100%; }
   main#Introduction {
     content: '';
-    background: url(images/austin5.jpg);
+    background: url("../images/austin5.jpg");
     background-size: cover;
     /* &:before {
                 content: '';
