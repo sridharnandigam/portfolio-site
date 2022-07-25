@@ -170,9 +170,21 @@ section {
     }
     &#Blog{
         .blog{
+            display: flex;
             h3{
                 text-align: center;
             }
+            a{
+                background-color: darken($blog-color, 15);
+                border-radius: $section-border-radius;
+                padding: $content-padding;
+                margin: auto;
+                font-size: 20px;
+                &:hover{
+                    background-color: $blog-color;
+                }
+            }
+            
         }
     }
 }
