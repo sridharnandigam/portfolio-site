@@ -226,7 +226,8 @@ section {
       margin: auto;
       font-size: 20px; }
       section#Blog .blog a:hover {
-        background-color: #1671fa; }
+        background-color: #1671fa;
+        transition: all 0.5s ease-out; }
 
 .tags-section {
   grid-row-start: 3;
